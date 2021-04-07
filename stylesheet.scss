@@ -1,4 +1,3 @@
-/* Import file _variables.scss */
 @import "variables";
 
 @mixin card($color) {
@@ -28,7 +27,7 @@
 }
 
 body {   
-  min-width: 460px;
+  min-width: 700px;
 	text-align: center;
 	font-family: "Hiragino Kaku Gothic ProN";
 	background-color: #f0f5fc;
@@ -57,13 +56,16 @@ header {
 }
 
 .html {
-  /* Ganti nilai dibawah dengan sebuah variable */
   @include card($html);
 }
 
 .javascript {
-  /* Ganti nilai dibawah dengan sebuah variable */
   @include card($javascript);
+}
+
+/* Tambahkan class .ruby dengan style yang sama seperti .html dan .javascript */
+.ruby {
+  @include card($ruby);
 }
 
 
